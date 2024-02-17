@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lap Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="page-container">
+        <div id="stopwatch-container">
+            <h1 id="display">00:00:00.000</h1>
+            <div id="buttons">
+                <button onclick="start()">Start</button>
+                <button id="pauseResumeButton" onclick="togglePauseResume()">Pause</button>
+                <button onclick="lap()">Lap</button>
+                <button onclick="reset()">Reset</button>
+            </div>
+        </div>
+
+        <div id="lap-history">
+            <h2>Lap History</h2>
+            <ul id="laps"></ul>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
